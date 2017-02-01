@@ -18,8 +18,6 @@
 
   tasks:
     - include: tasks/ansible-setup.yml
-    - include: tasks/preferences.yml
-      when: configure_prefs
 
     # TODO: Use sudo once .osx can be run via root with no user interaction.
     - name: Run .osx dotfiles.
