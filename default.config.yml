@@ -9,12 +9,13 @@ dotfiles_repo: git@github.com:pjanuario/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/dev/dotfiles
 dotfiles_files:
-  - .zshrc
+  - .apparix
   - .bash_aliases
   - .bashrc
   - .gitconfig
   - .gitignore
   - .osx
+  - .zshrc
 private_dotfiles_repo_local_destination: ~/Dropbox/dev/dotfiles
 private_dotfiles_files:
   - .machine_aliases
@@ -22,6 +23,7 @@ private_dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed initialy
+  - apparix
   - dockutil
   - git
   - git-cola
