@@ -45,8 +45,11 @@ homebrew_cask_apps:
   - caffeine
   - docker
   - dropbox
+  - firefox
   - google-drive
   - google-chrome
+  - kitematic
+  - libreoffice
   - skype
   - slack
   - spotify
@@ -61,7 +64,7 @@ mas_installed_app_ids:
   - 443987910   # 1Password (6.5.3)
   - 918858936   # Airmail 3 (3.2.1)
   - 918207447   # Annotate (2.1.4)
-  - 406056744   # Evernote ()
+  - 406056744   # Evernote (6.10)
 mas_email: ""
 mas_password: ""
 
