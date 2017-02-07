@@ -9,6 +9,7 @@ dotfiles_repo: git@github.com:pjanuario/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/dev/dotfiles
 dotfiles_files:
+  - .airplanerc.json
   - .apparix
   - .bash_aliases
   - .bashrc
@@ -28,6 +29,7 @@ homebrew_installed_packages:
   - git
   - git-cola
   - httpie
+  - httrack
   - mas
   - nvm
 
