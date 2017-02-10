@@ -19,7 +19,7 @@ dotfiles_files:
   - .gitignore
   - .osx
   - .zshrc
-private_dotfiles_repo_local_destination: ~/Dropbox/dev/dotfiles
+private_dotfiles_source: ~/Dropbox/dev/dotfiles
 private_dotfiles_files:
   - .machine_aliases
   - .credentials
@@ -40,6 +40,9 @@ homebrew_installed_packages:
   - httrack
   - mas
   - nvm
+  # npm install with native dependencies needs this package (namely zeromq)
+  - pkg-config
+  - zmq
 
 homebrew_taps:
   - homebrew/core

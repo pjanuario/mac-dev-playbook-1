@@ -19,7 +19,7 @@
 
   - name: Link dotfiles into home folder.
     file:
-      src: "{{ private_dotfiles_repo_local_destination }}/{{ item }}"
+      src: "{{ private_dotfiles_source }}/{{ item }}"
       dest: "{{ dotfiles_home }}/{{ item }}"
       state: link
     become: no
