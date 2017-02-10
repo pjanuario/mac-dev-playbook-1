@@ -19,6 +19,7 @@
 
   tasks:
     - include: tasks/ansible-setup.yml
+    - include: tasks/oh-my-zsh.yml
     - include: tasks/dockbar.yml
       when: configure_dockerbar
     - include: tasks/private-dotfiles.yml
