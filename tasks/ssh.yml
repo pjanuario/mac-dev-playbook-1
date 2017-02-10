@@ -1,0 +1,26 @@
+---
+  - pause:
+      prompt: "Ensure that ssh source folder are present and in sync, in case using dropbox"
+
+  - name: Ensure all configured ssh files are links.
+    shell: "ls -F ~/.ssh/{{ item }}"
+    register: existing_ssh_info
+    failed_when: false
+    always_run: yes
+    changed_when: false
+    with_items: "{{ ssh_files }}"
+
+  - name: Remove existing ssh file if a replacement is being linked.
+    file:
+      path: "~/.ssh/{{ ssh_files[item.0] }}"
+      state: absent
+    when: "'@' not in item.1.stdout"
+    with_indexed_items: "{{ existing_ssh_info.results }}"
+
+  - name: Link ssh files into .ssh folder.
+    file:
+      src: "{{ ssh_source }}/{{ item }}"
+      dest: "~/.ssh/{{ item }}"
+      state: link
+    become: no
+    with_items: "{{ ssh_files }}"

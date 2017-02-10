@@ -4,6 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_osx: yes
 configure_dockerbar: yes
 configure_private_dotfiles: yes
+configure_ssh: yes
 
 dotfiles_repo: git@github.com:pjanuario/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -21,6 +22,12 @@ private_dotfiles_repo_local_destination: ~/Dropbox/dev/dotfiles
 private_dotfiles_files:
   - .machine_aliases
   - .credentials
+
+ssh_source: ~/Dropbox/dev/ssh
+ssh_files:
+  - id_rsa
+  - id_rsa.pub
+  - config
 
 homebrew_installed_packages:
   # - ansible # Installed initialy
