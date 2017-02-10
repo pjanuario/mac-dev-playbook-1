@@ -4,6 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_osx: yes
 configure_dockerbar: yes
 configure_private_dotfiles: yes
+configure_nodejs: yes
 configure_ssh: yes
 
 dotfiles_repo: git@github.com:pjanuario/dotfiles.git
@@ -123,3 +124,9 @@ atom_packages:
   - language-ansible
   - linter
   - pretty-json
+
+# npm glopbal packages
+npm_packages:
+  - airplane
+  - http-server
+  - npm-check-updates

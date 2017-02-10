@@ -1,0 +1,7 @@
+- name: Install nodejs stable version
+  shell: source ~/.zshrc && nvm i stable
+  when: configure_nodejs
+
+- name: Install npm packages
+  npm:  name={{ item }} global=yes
+  with_items: "{{ npm_packages }}"
