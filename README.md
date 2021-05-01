@@ -1,17 +1,12 @@
 # Mac Development Ansible Playbook
 
-[![Build Status](https://travis-ci.org/geerlingguy/mac-dev-playbook.svg?branch=master)](https://travis-ci.org/geerlingguy/mac-dev-playbook)
-
 This playbook installs and configures most of the software I use on my Mac for web and software development. Some things in macOS are slightly difficult to automate, so I still have some manual installation steps, but at least it's all documented here.
 
 This is a work in progress, and is mostly a means for me to document my current Mac's setup. I'll be evolving this set of playbooks over time.
 
 *See also*:
 
-  - [Boxen](https://github.com/boxen)
-  - [Battleschool](http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool)
-  - [osxc](https://github.com/osxc)
-  - [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks) (the original inspiration for this project)
+  - [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) (the original inspiration for this project)
 
 ## Installation
 
@@ -33,7 +28,7 @@ You can override any of the defaults configured in `default.config.yml` by creat
       - cowsay
       - git
       - go
-    
+
     mas_installed_app_ids:
       - 443987910 # 1Password
       - 498486288 # Quick Resizer

@@ -23,7 +23,7 @@ private_dotfiles_source: ~/Dropbox/dev/dotfiles
 private_dotfiles_files:
   - .machine_aliases
   - .credentials
-
+  - .netrc
 ssh_source: ~/Dropbox/dev/ssh
 ssh_files:
   - id_rsa
@@ -38,8 +38,16 @@ homebrew_installed_packages:
   - git-cola
   - httpie
   - httrack
+  - heroku
+  - kubernetes-helm
+  - kubectl
+  - kube-ps1
+  - kubectx
   - mas
   - nvm
+  - packer
+  - terraform
+  - tree
   # npm install with native dependencies needs this package (namely zeromq)
   - pkg-config
   - zmq
@@ -63,6 +71,7 @@ homebrew_cask_apps:
   - google-chrome
   - kitematic
   - libreoffice
+  - minikube
   - skype
   - slack
   - spotify
@@ -70,6 +79,10 @@ homebrew_cask_apps:
   - stremio
   - telegram-desktop
   - toggldesktop
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - virtualbox-extension-pack
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
@@ -122,11 +135,19 @@ dockitems_to_persist:
 # atom packages
 atom_upgrade_all: False
 atom_packages:
+  - atom-jinja2
+  - cucumber
   - file-icons
   - highlight-line
   - language-ansible
+  - language-docker
+  - language-groovy
+  - language-jenkinsfile
+  - language-puppet
+  - language-terraform
   - linter
   - pretty-json
+  - language-docker
 
 # npm glopbal packages
 npm_packages:
