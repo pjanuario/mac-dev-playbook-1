@@ -33,24 +33,31 @@ ssh_files:
 homebrew_installed_packages:
   # - ansible # Installed initialy
   - apparix
-  - dockutil
+  - aws-iam-authenticator
+  - awscli
+  - dockutil # ??
   - git
   - git-cola
+  - helm
   - httpie
-  - httrack
-  - heroku
-  - kubernetes-helm
-  - kubectl
+  - httrack # ??
+  - kompose # ??
+  - ksd
   - kube-ps1
   - kubectx
-  - mas
+  - kubernetes-cli
+  - kubernetes-helm
+  # - kubectl ??
+  - mas # ??
   - nvm
-  - packer
+  # - rvm # ??
+  # - tree ??
+  - telnet
   - terraform
-  - tree
+  - yarn
   # npm install with native dependencies needs this package (namely zeromq)
-  - pkg-config
-  - zmq
+  # - pkg-config
+  # - zmq
 
 homebrew_taps:
   - homebrew/core
@@ -64,32 +71,31 @@ homebrew_cask_apps:
   - alfred
   - atom
   - caffeine
-  - docker
+  # - docker ??
   - dropbox
-  - firefox
   - google-drive
   - google-chrome
-  - kitematic
-  - libreoffice
-  - minikube
-  - skype
+  - iterm2
+  # - kap ??
+  # - kitematic ??
+  # - libreoffice ??
   - slack
   - spotify
   - spotify-notifications
-  - stremio
   - telegram-desktop
   - toggldesktop
-  - vagrant
-  - vagrant-manager
-  - virtualbox
-  - virtualbox-extension-pack
+  # - vagrant
+  # - vagrant-manager
+  # - virtualbox
+  # - virtualbox-extension-pack
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
-  - 1001955632  # Disk Cleanup Pro (1.6.0)
+  # - { id: 497799835, name: "Xcode (8.1)" }
+  # - 1001955632  # Disk Cleanup Pro (1.6.0)
   - 443987910   # 1Password (6.5.3)
-  - 918858936   # Airmail 3 (3.2.1)
-  - 918207447   # Annotate (2.1.4)
+  # - 918858936   # Airmail 3 (3.2.1)
+  # - 918207447   # Annotate (2.1.4)
   - 406056744   # Evernote (6.10)
 mas_email: ""
 mas_password: ""
